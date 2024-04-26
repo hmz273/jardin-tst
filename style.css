@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Branch';
+    src: url('Branch/Branch.otf') format('otf'),
+         url('Branch/Branch.ttf') format('truetype');
+}
+
+
+.branch-text {
+    font-family: 'Branch', sans-serif;
+}
+
+
 .custom-date-input::-webkit-calendar-picker-indicator {
     display: none;
 }
@@ -5,3 +17,7 @@
 .bgi{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg") lightgray 50% / cover no-repeat;
 }
+
+.quicksand-text {
+    font-family: "Quicksand", sans-serif;
+  }
