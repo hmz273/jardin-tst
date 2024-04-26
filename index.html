@@ -15,20 +15,25 @@
 
     <div class="flex md:flex-row flex-col gap-8 md:my-20 my-10">
         <div class="basis-2/3">
-            <input type="date" class="branch-text w-full opacity-70 custom-date-input text-[#13191D] text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent" placeholder="Date" name="" id="">
+            <input type="text" onfocus="(this.type = 'date')"  id="date" class="branch-text w-full opacity-70 custom-date-input text-[#13191D] text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent" placeholder="Check-in">
         </div>
         <div class="basis-2/3">
-            <input type="date" class="branch-text w-full opacity-70 custom-date-input text-[#13191D] text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent" placeholder="Date" name="" id="">
+            <input type="text" onfocus="(this.type = 'date')"  id="date" class="branch-text w-full opacity-70 custom-date-input text-[#13191D] text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent" placeholder="Check-out">
         </div>
+        
         <div class="basis-1/3">
-          <select class="branch-text w-full text-[#13191D] opacity-70 text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent" name="" id="">
+          <select class="branch-text w-full text-[#13191D] opacity-70 text-[18px] leading-[25.2px] font-normal pl-4 pb-2 border-b border-[#3C3A34] bg-transparent">
             <option value="">Adultes</option>
             <option value="">text</option>
             <option value="">text</option>
           </select>
         </div>
       </div>
-      <button class="border border-1 border-[#13191D] mt-6 px-8 py-4 md:text-[20px] md:leading-[20px] text-[18px] leading-[19.8px] uppercase font-semibold quicksand-text"> Réservez Maintenant</button>
+      <button class="border border-1 border-[#13191D] inline-flex mt-6 px-8 py-4 md:text-[20px] md:leading-[20px] text-[18px] leading-[19.8px] uppercase font-semibold quicksand-text"> Réservez Maintenant
+        <svg class="ml-3 mt-1" xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
+            <path d="M11.5 0.371094L17.5 6.37109M17.5 6.37109L11.5 12.3711M17.5 6.37109H0.5" stroke="#3D505A"/>
+            </svg>
+      </button>
   </section>
 
 
@@ -88,7 +93,11 @@
     <div class="w-full h-96 px-2 text-center content-center">
       <p class="text-[58px] leading-[63.8px] font-normal capitalize text-white branch-text">Offres Spéciales</p>
       <p class="text-[22px] leading-[24.2px] font-normal capitalize text-white my-4 quicksand-text">Consultez nos offres spéciales rien que pour vous</p>
-      <button class="border border-1 border-white mt-6 px-12 py-4 text-white text-[18px] leading-[19.8px] uppercase font-normal quicksand-text">Découvrir</button>
+      <button class="border border-1 border-white inline-flex mt-6 px-12 py-4 text-white text-[18px] leading-[19.8px] uppercase font-normal quicksand-text">Découvrir
+        <svg class="ml-3 mt-1" xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+            <path d="M11 1L17 7M17 7L11 13M17 7H0" stroke="white"/>
+        </svg>
+      </button>
     </div>
   </section>
 
@@ -100,10 +109,10 @@
           Km 13 Route De L’Ourika – Canal De Zaraba, 40000 Aït Hamid, Maroc
         </p>
         <p class="text-[18px] leading-[28.8px] font-normal text-[#13191D] py-2">
-          Visualiser notre établissement
-sur la carte
+          Visualiser notre établissement sur la carte
         </p>
       </div>
+      
       <div class="w-full">
         <p class="text-[18px] leading-[28.8px] font-normal text-[#13191D] py-2">
           Politique de confidentialité
@@ -113,6 +122,7 @@ sur la carte
           Plan de site
         </p>
       </div>
+
       <div class="w-full">
         <p class="text-[18px] leading-[28.8px] font-normal text-[#13191D] py-2">
           Nos chambres
@@ -133,6 +143,7 @@ sur la carte
           Contact
         </p>
       </div>
+
       <div class="grid grid-cols-2 md:grid-cols-1 h-[80px]">
         <div class="flex gap-4 py-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
@@ -187,11 +198,17 @@ sur la carte
             </svg>
           </div>
         </div>
-        <div class="bg-white h-8 md:col-start-8 md:col-end-10">
-          <a href="#" class="underline underline-offset-8 text-[18px] leading-[28.8px] font-normal">Technology Providers</a>
+        <div class="bg-white underline underline-offset-8 h-8 md:col-start-8 md:col-end-10">
+          <a href="#" class="inline-flex text-[18px] leading-[28.8px] font-normal">Technology Providers <svg class="ml-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M5.14283 2.84473V4.00697H10.0035L3.07031 11.3584L3.91476 12.1552L10.7679 4.88859V10.0066H11.9302V2.84473H5.14283Z" fill="#3C3A34"/>
+            </svg>
+        </a>
         </div>
-        <div class="bg-white h-8 md:col-start-10 md:col-span-3">
-          <a href="" class="underline underline-offset-8 text-[18px] leading-[28.8px] font-normal">Politique de confidentialité</a>
+        <div class="bg-white underline underline-offset-8  h-8 md:col-start-10 md:col-span-3">
+          <a href="" class="text-[18px] leading-[28.8px] font-normal inline-flex">Politique de confidentialité <svg class="ml-2 mt-2" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+            <path d="M5.14283 2.84473V4.00697H10.0035L3.07031 11.3584L3.91476 12.1552L10.7679 4.88859V10.0066H11.9302V2.84473H5.14283Z" fill="#3C3A34"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

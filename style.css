@@ -10,9 +10,22 @@
 }
 
 
-.custom-date-input::-webkit-calendar-picker-indicator {
-    display: none;
-}
+
+input[type="date"] {
+    position: relative;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+  }
 
 .bgi{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg") lightgray 50% / cover no-repeat;
@@ -20,4 +33,5 @@
 
 .quicksand-text {
     font-family: "Quicksand", sans-serif;
-  }
+}
+
